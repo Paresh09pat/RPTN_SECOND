@@ -598,8 +598,9 @@
 
     .security_img {
         /* border: 1px solid red; */
-        width: 350px;
-        margin-top: 10px;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 0px;
         margin-bottom: 50px;
     }
 
@@ -641,20 +642,6 @@
         margin-left: 5%;
         height: 180px;
     }
-
-    /* .th_sec_card_headText {
-    text-align: center;
-    font-family: MoongladeDemoBold-jOzM;
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-.th_sec_card_sim_Text {
-    font-size: 18px;
-    text-align: center;
-} */
 
     /* fourth section */
 
@@ -757,7 +744,7 @@
         padding-right: 0px;
         letter-spacing: 0px;
         word-spacing: 0px;
-        line-height: 15px;
+        line-height: 20px;
         padding-top: 30px;
     }
 
@@ -853,20 +840,343 @@
     .vis_arrow_right span {
         margin: -14px;
     }
-
-    
-
-
-
-
-
-
-
-
 }
 
+/* *****************media query 2 ************** */
 
+@media screen and (min-device-width : 480px) and (max-device-width : 1440px) {
 
+    #first_main_div_sec {
+        height: auto;
+    }
 
+    .first_sec_head_Adjust {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+    }
 
-@media screen and (min-device-width : 480px) and (max-device-width : 1440px) {}
+    .carousel__item {
+        height: 90vh;
+    }
+
+    .first_sec_head_CSCT {
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        /* border: 1px solid red; */
+    }
+
+    .fssstext {
+        font-size: 40px;
+    }
+
+    .fssstextsimple {
+        font-size: 25px;
+    }
+
+    .first_sec_more_simpleText {
+        padding-right: 20px;
+        margin-top: 20px;
+        font-size: 18px;
+        /* border: 1px solid red; */
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    /* down arrow */
+    .arrow_right {
+        display: none;
+    }
+
+    /* second section */
+
+    #second_main_div_sec {
+        height: auto;
+        display: block;
+    }
+
+    .sec_div_sub1 {
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        padding-top: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .sec_div_sub2 {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+    }
+
+    .sec_para1 {
+        font-size: 27px;
+        word-spacing: 8px;
+    }
+
+    .sec_text_inc {
+        font-size: 35px;
+    }
+
+    .sec_para2 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .security_img {
+        /* border: 1px solid red; */
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    /* third section */
+
+    .third_main_div_sec {
+        height: auto;
+    }
+
+    .third_sec_col_div {
+        height: 80px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        font-size: 25px;
+    }
+
+    .col_text_increase {
+        font-size: 35px;
+    }
+
+    #th_card_div_main {
+        height: auto;
+        display: block;
+        padding-left: 0%;
+        margin-top: 0px;
+    }
+
+    .th_card_div_sub {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 30px;
+    }
+
+    .MLEFT {
+        margin-right: 0%;
+    }
+
+    .th_sec_cards_pic {
+        width: 80%;
+        margin-left: 10%;
+        height: 220px;
+    }
+
+    /* fourth section */
+
+    #fourth_main_div_sec {
+        height: auto;
+    }
+
+    .fourth_sec_head_div {
+        /* border: 1px solid yellow; */
+        width: 100%;
+        height: 120px;
+        margin-bottom: 40px;
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+
+    .fourth_head_text_div {
+        padding-left: 15px;
+    }
+
+    .fourth_head_text_div_CT {
+        color: rgb(7, 184, 184);
+        font-size: 25px;
+        word-spacing: 5px;
+        letter-spacing: 1PX;
+    }
+
+    .fourth_head_text_div_NT {
+        word-spacing: 5PX;
+        letter-spacing: 2PX;
+    }
+
+    .FSTI {
+        font-size: 20PX;
+    }
+
+    #fourth_sec_cards {
+        width: 100%;
+        height: auto;
+        display: block;
+        flex-wrap: wrap;
+        padding-left: 0%;
+        padding-bottom: 20px;
+    }
+
+    .fourth_sec_sub_card {
+        width: 90%;
+        margin-left: 5%;
+        height: 180px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        background-color: rgb(54, 48, 48);
+        border-radius: 20px 0px 20px 0px;
+    }
+
+    .fouth_sub_card_colorText {
+        font-size: 25px;
+    }
+
+    .fouth_sub_card_simple_Text {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    /* FIFTH SECTION */
+
+    #fifth_main_div_sec {
+        /* border: 1px solid red; */
+        height: auto;
+        display: block;
+    }
+
+    .fifth_sec_sub_div {
+        /* border: 1px solid red; */
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .FISML {
+        margin-left: 5%;
+        
+    }
+
+    .fifth_sec_bor_left {
+        padding-left: 10px;
+        margin-top: 30px;
+        
+    }
+
+    .fifth_sec_head_CT {
+        font-size: 28px;
+        line-height: 70px;
+    }
+
+    .fifth_sec_head_NT {
+        line-height: 20px;
+        font-size: 32px;
+    }
+
+    .fifth_sec_simple_text {
+        padding-right: 0px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+        line-height: 25px;
+        padding-top: 30px;
+        font-size: 18px;
+    }
+
+    .fifth_sec_image {
+        /* border: 1px solid red;  */
+        width: 90%;
+        margin-left: 5%;
+        margin-top: -50px;
+    }
+
+    /* sixth section */
+
+    #sixth_main_div_sec {
+        /* border: 1px solid red; */
+        height: auto;
+        display: block;
+    }
+
+    .sixth_sec_head_div {
+        /* border: 1px solid red; */
+        margin-top: 0px;
+        padding-top: 30px;
+        height: 100px;
+        font-size: 25PX;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+    }
+
+    .SSTFLIN {
+        font-size: 35PX;
+    }
+
+    .sixth_sec_sub_div {
+        /* border: 1px solid yellow; */
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .SSMLB {
+        margin-left: 0%;
+    }
+
+    .sixth_sec_image {
+        /* border: 1px solid red;  */
+        width: 90%;
+        margin-top: 0px;
+        margin-left: 5%;
+    }
+
+    .callforadvice {
+        font-weight: 600;
+        font-size: 25PX;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    .contact,
+    .commail {
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+        padding-left: 20px;
+    }
+
+    .contact:hover,
+    .commail:hover {
+        color: red;
+    }
+
+    .sayhello {
+        font-weight: 600;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    .CFATI {
+        font-size: 30PX;
+    }
+
+    /* left arrow */
+
+    .readmore__button {
+        height: 50px;
+        width: 250px;
+        padding-left: 30px;
+        position: relative;
+        margin-left: 50px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .vis_arrow_right span {
+        margin: -10px;
+    }
+
+    .contactus{
+        font-size: 20px;
+    }
+}
