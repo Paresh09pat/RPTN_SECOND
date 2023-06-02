@@ -285,6 +285,11 @@
     box-shadow: 0px 0px 10px rgb(248, 47, 2);
 } */
 
+.item{
+    background-image: url("https://img.freepik.com/free-vector/cyber-security-concept-with-hud-element-blue-tone-background_99087-130.jpg?size=626&ext=jpg");
+    background-size: cover;
+}
+
 .first_sec_head_Adjust {
     width: 40%;
     margin-left: 50%;
@@ -991,8 +996,9 @@
         height: auto;
     }
 
-    .slide active {
-        height: 80vh;
+    .item {
+        height: 75vh;
+      
     }
 
     .first_sec_head_CSCT {
