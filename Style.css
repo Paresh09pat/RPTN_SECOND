@@ -955,12 +955,12 @@
     }
 
     .carousel__item {
-        height: 90vh;
+        height: 80vh;
     }
 
     .first_sec_head_CSCT {
         padding-left: 20px;
-        margin-top: 10px;
+        margin-top: 100px;
         margin-bottom: 30px;
     }
 
