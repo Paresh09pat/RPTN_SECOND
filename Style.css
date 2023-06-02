@@ -991,7 +991,7 @@
         height: auto;
     }
 
-    .carousel__item {
+    .slide active {
         height: 80vh;
     }
 
