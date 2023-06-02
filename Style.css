@@ -87,10 +87,11 @@
 
 .navbar__links {
     color: #fff;
+    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 125px;
+    width: 115px;
     text-decoration: none;
     height: 100%;
     transition: all 0.5s ease;
