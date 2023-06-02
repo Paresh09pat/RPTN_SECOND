@@ -18,53 +18,53 @@
     <link />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
 </head>
 
 <body>
 
-<!-- header section -->
-<nav class="navbar" id="navbar">
-    <div class="navbar_container">
-        <a href="#home" id="navbar__logo"><img src="./Images/tech_logo.png" alt="logo" class="nav--logo"></a>
+    <!-- header section -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar_container">
+            <a href="#home" id="navbar__logo"><img src="./Images/tech_logo.png" alt="logo" class="nav--logo"></a>
 
-        <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">What we do</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">Who we are</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="services-page">Career</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="services-page">Contact</a>
+                </li>
+
+                <li class="navbar__btn">
+                    <a href="#sign-up" id="signup">
+                        <div class="input-box">
+                            <input type="text" placeholder="Search..." />
+                            <span class="search">
+                                <i class="uil uil-search search-icon"></i>
+                            </span>
+                            <i class="uil uil-times close-icon"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
-
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="#home" class="navbar__links" id="home-page">What we do</a>
-            </li>
-
-            <li class="navbar__item">
-                <a href="#about" class="navbar__links" id="about-page">Who we are</a>
-            </li>
-
-            <li class="navbar__item">
-                <a href="#services" class="navbar__links" id="services-page">Career</a>
-            </li>
-
-            <li class="navbar__item">
-                <a href="#services" class="navbar__links" id="services-page">Contact</a>
-            </li>
-
-            <li class="navbar__btn">
-                <a href="#sign-up" id="signup">
-                    <div class="input-box">
-                        <input type="text" placeholder="Search..." />
-                        <span class="search">
-                            <i class="uil uil-search search-icon"></i>
-                        </span>
-                        <i class="uil uil-times close-icon"></i>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    </nav>
 
 
 
@@ -72,7 +72,7 @@
 
     <div id="first_main_div_sec">
 
-        <div class="carousel">
+        <!-- <div class="carousel">
             <div class="carousel__item">
 
                 <div class="first_sec_head_Adjust">
@@ -105,7 +105,46 @@
             <div class="carousel__item">Content #3</div>
             <div class="carousel__item">Content #4</div>
             <div class="carousel__item">Content #5</div>
+        </div> -->
+
+
+        <div id="carousel">
+            <div class="slide active">
+                <div class="first_sec_head_Adjust">
+                    <div class="first_sec_head_CSCT" data-aos="fade-down">
+                        <p class="fssstext">CYBER SECURITY</p>
+                        <p class="fssstextsimple"> YOUR DATA AND SYSTEM SECURITY <br> IS OUR PRIORITY</p>
+                    </div>
+                    <p class="first_sec_more_simpleText" data-aos="fade-up">
+                        Our cyber security mechanism defending computers servers mobile devices vectronic systems, network
+                        systems and data from malicious attacks, it's also known as information Technology security or
+                        electronic information security. <br><br>
+                  
+                        Cyber security focuses on protecting computer systems from unauthorized access or being otherwise
+                        damaged or made inaccessible information security is a broader category that looks to protect all
+                        information assets whether in hardcopy dotal form
+                        Cyber security focuses on protecting computer systems from unauthorized access or being otherwise
+                        damaged or made inaccessible information security is a broader category that looks to protect all
+                        information assets whether in hardcopy dotal form
+                    </p>
+
+                    <div class="arrow_right">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img class="coro_img" src="https://1.bp.blogspot.com/-0mV9UfJhXNE/XD930chJlQI/AAAAAAAAAuM/x_DPVMFGf94err7Wznmm4l0XzC74VIPNwCKgBGAs/w0/hi-tech-interface-abstract-9-4k.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img class="coro_img" src="https://wallpaperaccess.com/full/418162.png" alt="">
+            </div>
         </div>
+
+
+
 
     </div>
 
@@ -181,7 +220,7 @@
 
     <!-- fourth section -->
 
-    <div id="fourth_main_div_sec" >
+    <div id="fourth_main_div_sec">
         <div class="fourth_sec_head_div" data-aos="fade-down">
             <div class="fourth_head_text_div">
                 <p class="fourth_head_text_div_CT"> OPTIMAL SECURITY SOLUTIONS</p>
@@ -194,7 +233,7 @@
         </div>
 
         <div id="fourth_sec_cards">
-            <div class="fourth_sec_sub_card MLEFT"  data-aos="fade-up">
+            <div class="fourth_sec_sub_card MLEFT" data-aos="fade-up">
                 <p class="fouth_sub_card_colorText">
                     Network Security
                 </p>
@@ -206,7 +245,7 @@
                 </p>
             </div>
 
-            <div class="fourth_sec_sub_card MLEFT"  data-aos="fade-up">
+            <div class="fourth_sec_sub_card MLEFT" data-aos="fade-up">
                 <p class="fouth_sub_card_colorText">
                     Application Security
                 </p>
@@ -218,7 +257,7 @@
                 </p>
             </div>
 
-            <div class="fourth_sec_sub_card"  data-aos="fade-up">
+            <div class="fourth_sec_sub_card" data-aos="fade-up">
                 <p class="fouth_sub_card_colorText">
                     Information Security
                 </p>
@@ -228,7 +267,7 @@
                 </p>
             </div>
 
-            <div class="fourth_sec_sub_card MLEFT"  data-aos="fade-up">
+            <div class="fourth_sec_sub_card MLEFT" data-aos="fade-up">
                 <p class="fouth_sub_card_colorText">
                     Operational Security
                 </p>
@@ -243,7 +282,7 @@
                 </p>
             </div>
 
-            <div class="fourth_sec_sub_card MLEFT"  data-aos="fade-up">
+            <div class="fourth_sec_sub_card MLEFT" data-aos="fade-up">
                 <p class="fouth_sub_card_colorText">
                     Disaster Recovery And Business Continuity
                 </p>
@@ -256,7 +295,7 @@
                 </p>
             </div>
 
-            <div class="fourth_sec_sub_card"  data-aos="fade-up">
+            <div class="fourth_sec_sub_card" data-aos="fade-up">
                 <p class="fouth_sub_card_colorText">
                     End-user Education
                 </p>
@@ -443,7 +482,6 @@
 
         </div>
     </footer>
-
 
     <script src="index.js"></script>
 </body>

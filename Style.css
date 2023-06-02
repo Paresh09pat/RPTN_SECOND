@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: EccentricStd;
     font-family: Minimo;
@@ -214,7 +215,34 @@
     z-index: 5;
 }
 
-.carousel {
+#carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.coro_img{
+    background-size: contain;
+    width: 100%;
+}
+
+/* .carousel {
     position: relative;
 }
 
@@ -255,7 +283,7 @@
 
 .carousel__button:hover {
     box-shadow: 0px 0px 10px rgb(248, 47, 2);
-}
+} */
 
 .first_sec_head_Adjust {
     width: 40%;
@@ -282,13 +310,15 @@
     font-size: 20px;
     word-spacing: 5px;
     letter-spacing: 2px;
+    color: white;
 }
 
 .first_sec_more_simpleText {
     padding-right: 20px;
     text-align: justify;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 16px;   
+    color: white;
 }
 
 /* down arrow */

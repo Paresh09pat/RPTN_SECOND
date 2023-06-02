@@ -123,3 +123,26 @@ window.onscroll = function() {
   }
   prevScrollPos = currentScrollPos;
 };
+
+
+
+var slides = document.getElementsByClassName('slide');
+var currentSlide = 0;
+
+function showSlide(index) {
+    // Hide all slides
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
+    }
+    
+    // Show the slide at the specified index
+    slides[index].classList.add('active');
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+// Change slide every 5 seconds (5000 milliseconds)
+setInterval(nextSlide, 10000);
