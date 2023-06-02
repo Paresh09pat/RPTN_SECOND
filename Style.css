@@ -14,7 +14,8 @@
     font-family: MoongladeDemoBold-jOzM;
 }
 
-* navbar */ * {
+/* * navbar */  */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -30,20 +31,19 @@
     font-size: 1.2rem;
     position: fixed;
     width: 100%;
+    top: 0px;
     transition: top 0.3s;
-    top: 0;
-    z-index: 999;
-    /* background-color: #3aa6ca; */
+    z-index: 1000;
+   
+}
+.hide{
+    top: -100px;
 }
 
-.navbar.hidden {
-    top: -100px; /* Or any value that moves the navbar off the screen */
+.navbar-active {
+    top: 0;
   }
 
-/* #navbar {
-    position: sticky;
-    color: red;
-} */
 
 .nav--logo {
     width: 80px;
@@ -751,6 +751,10 @@
 }
 
 /* footer */
+
+.gototop:hover{
+cursor: pointer;
+}
 
 .com_logo {
     width: 100px;

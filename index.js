@@ -113,19 +113,66 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
 
 
 // hide nav bar
-  var prevScrollPos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollPos > currentScrollPos) {
-    document.getElementById("navbar").classList.remove("hidden");
-  } else {
-    document.getElementById("navbar").classList.add("hidden");
+
+// Store the current scroll position
+var lastScrollTop = 0;
+// Store the timeout ID for hiding the navbar
+var timeoutId;
+// Get the navbar element
+var navbar = document.getElementById("navbar");
+
+// Check if the user has scrolled on page load
+window.addEventListener("load", function() {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop === 0) {
+    navbar.classList.add("hide");
   }
-  prevScrollPos = currentScrollPos;
-};
+});
+
+// Listen for scroll events
+window.addEventListener("scroll", function() {
+  // Clear any existing timeout
+  clearTimeout(timeoutId);
+
+  // Get the current scroll position
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Determine if the user has reached the top of the page
+  if (scrollTop === 0) {
+    navbar.classList.add("hide");
+  } else {
+    navbar.classList.remove("hide");
+  }
+
+  // Update the last scroll position
+  lastScrollTop = scrollTop;
+
+  // Set a timeout to hide the navbar after 2 seconds of inactivity
+  timeoutId = setTimeout(function() {
+    navbar.classList.add("hide");
+  }, 1000);
+});
+
+// Listen for mouseenter event on the navbar
+navbar.addEventListener("mouseenter", function() {
+  // Clear any existing timeout
+  clearTimeout(timeoutId);
+
+  // Add the active class to keep the navbar visible
+  navbar.classList.add("navbar-active");
+});
+
+// Listen for mouseleave event on the navbar
+navbar.addEventListener("mouseleave", function() {
+  // Add the hide class to hide the navbar after a delay
+  timeoutId = setTimeout(function() {
+    navbar.classList.remove("navbar-active");
+    navbar.classList.add("hide");
+  }, 1000);
+});
 
 
-
+// corosal
 var slides = document.getElementsByClassName('slide');
 var currentSlide = 0;
 
@@ -146,3 +193,13 @@ function nextSlide() {
 
 // Change slide every 5 seconds (5000 milliseconds)
 setInterval(nextSlide, 10000);
+
+
+// scroll to top
+function scrollToTop() {
+  // Scroll to the top of the page smoothly
+  window.scrollTo({
+    top: 0,
+    behavior:"smooth"
+  });
+}
