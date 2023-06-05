@@ -1,3 +1,5 @@
+// navbar ********************
+
 document.querySelectorAll(".carousel").forEach((carousel) => {
     const items = carousel.querySelectorAll(".carousel__item");
     const buttonsHtml = Array.from(items, () => {
@@ -81,7 +83,8 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
   window.addEventListener('scroll', highlightMenu);
   window.addEventListener('click', highlightMenu);
   
-  //close mobile menu
+  //close mobile menu *****************************
+
   const hideMobileMenu = () => {
         const menuBars = document.querySelector('.is-active')
         if (window.innerWidth <= 768 && menuBars) {
@@ -95,7 +98,7 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     AOS.init();
   
   
-  //   nav search
+  //   nav search *******************************************
   
   // ---- ---- Const ---- ---- //
   let inputBox = document.querySelector('.input-box'),
@@ -112,7 +115,7 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
   });
 
 
-// hide nav bar
+// hide nav bar ********************************************-
 
 // Store the current scroll position
 var lastScrollTop = 0;
@@ -150,29 +153,26 @@ window.addEventListener("scroll", function() {
   // Set a timeout to hide the navbar after 2 seconds of inactivity
   timeoutId = setTimeout(function() {
     navbar.classList.add("hide");
-  }, 1000);
+  }, 500);
 });
 
 // Listen for mouseenter event on the navbar
 navbar.addEventListener("mouseenter", function() {
   // Clear any existing timeout
   clearTimeout(timeoutId);
-
-  // Add the active class to keep the navbar visible
-  navbar.classList.add("navbar-active");
 });
 
 // Listen for mouseleave event on the navbar
 navbar.addEventListener("mouseleave", function() {
-  // Add the hide class to hide the navbar after a delay
+  // Set a timeout to hide the navbar after 2 seconds
   timeoutId = setTimeout(function() {
-    navbar.classList.remove("navbar-active");
     navbar.classList.add("hide");
-  }, 1000);
+  }, 500);
 });
 
 
-// corosal
+// corosal  *********************************************
+
 var slides = document.getElementsByClassName('slide');
 var currentSlide = 0;
 
@@ -192,7 +192,7 @@ function nextSlide() {
 }
 
 // Change slide every 5 seconds (5000 milliseconds)
-setInterval(nextSlide, 10000);
+setInterval(nextSlide, 8000);
 
 
 // scroll to top
